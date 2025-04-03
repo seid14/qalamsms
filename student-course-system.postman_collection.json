@@ -1,0 +1,90 @@
+{
+    "info": {
+        "name": "Student Course System API",
+        "description": "API endpoints for managing students and courses",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Students",
+            "item": [
+                {
+                    "name": "Get All Students",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{base_url}}/api/students",
+                            "host": ["{{base_url}}"],
+                            "path": ["api", "students"]
+                        }
+                    }
+                },
+                {
+                    "name": "Create Student",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "{{base_url}}/api/students",
+                            "host": ["{{base_url}}"],
+                            "path": ["api", "students"]
+                        },
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"studentName\": \"Test Student\",\n    \"studentEmail\": \"test.student@example.com\",\n    \"selectedCourses\": [1, 2]\n}"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Courses",
+            "item": [
+                {
+                    "name": "Get All Courses",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{base_url}}/api/courses",
+                            "host": ["{{base_url}}"],
+                            "path": ["api", "courses"]
+                        }
+                    }
+                },
+                {
+                    "name": "Create Course",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "{{base_url}}/api/courses",
+                            "host": ["{{base_url}}"],
+                            "path": ["api", "courses"]
+                        },
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"courseTitle\": \"Test Course\",\n    \"courseDescription\": \"Test course description\"\n}"
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "variable": [
+        {
+            "key": "base_url",
+            "value": "http://localhost:8000",
+            "type": "string"
+        }
+    ]
+} 

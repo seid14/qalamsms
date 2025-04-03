@@ -1,0 +1,128 @@
+/* Custom styles for Qalam SMS */
+
+/* General Styles */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Card styling */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: none;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Table styling */
+.table {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table thead th {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Form styling */
+.form-control {
+    border-radius: 6px;
+    border: 1px solid #dee2e6;
+    padding: 8px 12px;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Alert styling */
+.alert {
+    border: none;
+    border-radius: 8px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* Navigation styling */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+/* Multi-select styling */
+select[multiple] {
+    min-height: 120px;
+}
+
+/* Dashboard Stats */
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.text-primary {
+    color: #007bff !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 1rem;
+    }
+    
+    .hover-card:hover {
+        transform: none;
+    }
+} 
