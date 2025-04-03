@@ -1,6 +1,6 @@
 # Student & Course Management System
 
-A Laravel mini-app for managing Somali high school students and courses with CRUD operations, many-to-many relationships, authentication, and a REST API.
+A Laravel mini-app for managing high school students and courses with CRUD operations, many-to-many relationships, authentication, and a REST API.
 
 ## Features
 
